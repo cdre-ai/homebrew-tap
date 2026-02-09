@@ -5,20 +5,20 @@
 class Cadre < Formula
   desc "A foreman for Claude Code — supervises permissions, reviews code, runs quality gates"
   homepage "https://github.com/cdre-ai/cadre-releases"
-  version "0.1.0-beta.4"
+  version "0.1.0-beta.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.4/cadre-releases_0.1.0-beta.4_darwin_amd64.tar.gz"
-      sha256 "eb494c1f1a0c47f70a1e025b4aae5a7f245d49e4e17aa54fa91f1519bbd3b8ae"
+      url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.5/cadre-releases_0.1.0-beta.5_darwin_amd64.tar.gz"
+      sha256 "c17c05a583403b9f9e41c242e63337395505d0561acf120feea525560d8a7cfc"
 
       def install
         bin.install "cadre"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.4/cadre-releases_0.1.0-beta.4_darwin_arm64.tar.gz"
-      sha256 "5cb77ad4fb08e74fb94b4ff85cd65014f6876d3be5073f57567231e967f826dd"
+      url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.5/cadre-releases_0.1.0-beta.5_darwin_arm64.tar.gz"
+      sha256 "ad71c16d0de91be7183fd01ca881ac78c72dd2aa5ac6182b4a0d465f1177742c"
 
       def install
         bin.install "cadre"
@@ -28,15 +28,15 @@ class Cadre < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.4/cadre-releases_0.1.0-beta.4_linux_amd64.tar.gz"
-      sha256 "7861b3bb21f3eafa94d5d4f778d7d6c91415ada2c19498ecc4f0a4801d3cde46"
+      url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.5/cadre-releases_0.1.0-beta.5_linux_amd64.tar.gz"
+      sha256 "e5ed0438ef6c797a19f2dca8958b08f4776aca4447a056425b3b1fc912c6ebb2"
       def install
         bin.install "cadre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.4/cadre-releases_0.1.0-beta.4_linux_arm64.tar.gz"
-      sha256 "7d3a20be645ef6f985019ee2c7095924ed966ff3f99cf5d26a5f47cee5ff3478"
+      url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.5/cadre-releases_0.1.0-beta.5_linux_arm64.tar.gz"
+      sha256 "76718447af34f3777a51c60d51a8164895c8fa5c0fefa7b0e5dc03e6d52a7fa9"
       def install
         bin.install "cadre"
       end
