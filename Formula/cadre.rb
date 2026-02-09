@@ -10,7 +10,7 @@ class Cadre < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.3/cadre-releases_0.1.0-beta.3_darwin_amd64.tar.gz"
-      sha256 "965ad573b69808b518bae0e9eeb311000963893cbb92c14edfc8a2216d45a918"
+      sha256 "14214a1d2be6e279a06d7f2cd4c30b4965d564531e520d47115299b7a823502c"
 
       def install
         bin.install "cadre"
@@ -18,7 +18,7 @@ class Cadre < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.3/cadre-releases_0.1.0-beta.3_darwin_arm64.tar.gz"
-      sha256 "80c76b81c48e5d97eed2bc3dbf9fb1600915076b831d41526281c0d2ae3ab72b"
+      sha256 "db5e670e3882507a95dcd6ffa51e6a15242c114126f206a12b199495d76e12d7"
 
       def install
         bin.install "cadre"
@@ -29,14 +29,14 @@ class Cadre < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.3/cadre-releases_0.1.0-beta.3_linux_amd64.tar.gz"
-      sha256 "25789a1920329711450be7cd3c3ec53223b1000bf2bb0462816ff08715c80903"
+      sha256 "16215a75fc2b6e2781a5efe85b01874d07886da9d2cacde527510ee96b58772b"
       def install
         bin.install "cadre"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cdre-ai/cadre-releases/releases/download/v0.1.0-beta.3/cadre-releases_0.1.0-beta.3_linux_arm64.tar.gz"
-      sha256 "1bff0b493530ee40626da3b66f97a84d7a10ce27a00961119a4239d9be4f7e08"
+      sha256 "641ddcd66d3627cd25a2f5060bd94ff1b1c109b9991ad705e269cd753bea9824"
       def install
         bin.install "cadre"
       end
