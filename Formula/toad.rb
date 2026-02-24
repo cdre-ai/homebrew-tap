@@ -5,21 +5,21 @@
 class Toad < Formula
   desc "AI-powered code assistant that lives in Slack"
   homepage "https://github.com/cdre-ai/toad"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cdre-ai/toad/releases/download/v0.1.0/toad_0.1.0_darwin_amd64.tar.gz"
-      sha256 "bc8d184c1461264c08048b81a9139dbb49eb1d867e4d298505a28f87556002ec"
+      url "https://github.com/cdre-ai/toad/releases/download/v0.1.1/toad_0.1.1_darwin_amd64.tar.gz"
+      sha256 "972275851f0a02b313ad1621718ccd3e216329a20cedbd59cd7ee5a8259e5935"
 
       define_method(:install) do
         bin.install "toad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cdre-ai/toad/releases/download/v0.1.0/toad_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b04d51f9ac91a398f6e03579e8c9b79593550324b4813ca6b981a7094cbaa520"
+      url "https://github.com/cdre-ai/toad/releases/download/v0.1.1/toad_0.1.1_darwin_arm64.tar.gz"
+      sha256 "b4602905eb090a2e8872bd41981dea85fb6e7157788f73d379468d5d7845175f"
 
       define_method(:install) do
         bin.install "toad"
@@ -29,15 +29,15 @@ class Toad < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cdre-ai/toad/releases/download/v0.1.0/toad_0.1.0_linux_amd64.tar.gz"
-      sha256 "93c0234adb85a86a9f02241a61f52f41bdcf531710192305c171b448696cc17b"
+      url "https://github.com/cdre-ai/toad/releases/download/v0.1.1/toad_0.1.1_linux_amd64.tar.gz"
+      sha256 "f0ff6a843acb16c464de15a197d36240ff3a53a236883718b4360d36a0b37f55"
       define_method(:install) do
         bin.install "toad"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cdre-ai/toad/releases/download/v0.1.0/toad_0.1.0_linux_arm64.tar.gz"
-      sha256 "be72bfe3201f2395a9047689fc3d6152cc0030359e0ded55690225f198302e0b"
+      url "https://github.com/cdre-ai/toad/releases/download/v0.1.1/toad_0.1.1_linux_arm64.tar.gz"
+      sha256 "7f7a4d8c72dc8724ac7a8f21e902f79d983c5ab638d4c562a730568999af95ce"
       define_method(:install) do
         bin.install "toad"
       end
