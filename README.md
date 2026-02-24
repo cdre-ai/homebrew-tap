@@ -1,16 +1,34 @@
-# Homebrew Tap for Cadre
+# Cadre Packages
 
-A foreman for Claude Code.
+Homebrew casks and Scoop manifests for Cadre tools.
 
-## Install
+## Homebrew (macOS and Linux)
 
 ```bash
-brew tap cdre-ai/tap
+# Add tap
+brew tap cdre-ai/tap https://github.com/cdre-ai/homebrew-tap
+
+# List available packages
+brew tap-info cdre-ai/tap
+
+# Install
+brew install --cask toad
 brew install cadre
 ```
 
-## Update
+## Scoop (Windows)
 
 ```bash
-brew upgrade cadre
+# Add bucket
+scoop bucket add cdre-ai https://github.com/cdre-ai/homebrew-tap
+
+# Install
+scoop install toad
 ```
+
+## Available packages
+
+| Package | Description |
+|---------|-------------|
+| [toad](https://github.com/cdre-ai/toad) | AI-powered code assistant that lives in Slack |
+| [cadre](https://github.com/cdre-ai/cadre) | A foreman for Claude Code |
