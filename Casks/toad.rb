@@ -3,7 +3,7 @@ cask "toad" do
   name "toad"
   desc "AI-powered code assistant that lives in Slack"
   homepage "https://github.com/cdre-ai/toad"
-  version "0.1.28"
+  version "0.1.29"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "toad" do
   on_macos do
     on_intel do
       url "https://github.com/cdre-ai/toad/releases/download/v#{version}/toad_v#{version}_macOS_64bit.tar.gz"
-      sha256 "ba92aca490c9e86ca73c9efc4425a9d8d90fb6b740c905962e78f1aabd2045de"
+      sha256 "018aabc4f9edaf74b09d60e71de0b5936aefe6f47770c55c2324a6101f302a47"
     end
     on_arm do
       url "https://github.com/cdre-ai/toad/releases/download/v#{version}/toad_v#{version}_macOS_ARM64.tar.gz"
-      sha256 "e069c5401386cb9ac4d8b89ea976b5be53e17c1257c71b7e0f296714d1e234e2"
+      sha256 "7de47934a75e35595cbd8172d295141ea09f96cc0c33b9161c29bf37aebb39f4"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/cdre-ai/toad/releases/download/v#{version}/toad_v#{version}_Linux_64bit.tar.gz"
-      sha256 "b193d4da1c69d5e6bbfc2bc6d5ad04760b7a0eea73baf6e833520ba6bc8a8833"
+      sha256 "557cb1952ca55b54256b2df99de9e3fb0565e2ae439402060cab4b46c25b5ffa"
     end
     on_arm do
       url "https://github.com/cdre-ai/toad/releases/download/v#{version}/toad_v#{version}_Linux_ARM64.tar.gz"
-      sha256 "a41d25aadfaff53b4fd56b2de1543b4e6d39188e6ca452f175e393d4982c95c1"
+      sha256 "cce31dd7c0b88aca80a34baf8538d5ef5bd841496a0808c36b37a1ee84c9e1fb"
     end
   end
 
