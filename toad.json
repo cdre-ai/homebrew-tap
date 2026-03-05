@@ -1,19 +1,19 @@
 {
-    "version": "0.1.45",
+    "version": "0.1.46",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cdre-ai/toad/releases/download/v0.1.45/toad_v0.1.45_Windows_64bit.zip",
+            "url": "https://github.com/cdre-ai/toad/releases/download/v0.1.46/toad_v0.1.46_Windows_64bit.zip",
             "bin": [
                 "toad.exe"
             ],
-            "hash": "71aec6cf7ccfb431d51fffcd8bba765986328ed0bfb62c5285ad0a385bf87c18"
+            "hash": "411ffaa7dc701a7dfbf938ef161bd4b3b4b8c84d5f431b9d3df3087557a51eb0"
         },
         "arm64": {
-            "url": "https://github.com/cdre-ai/toad/releases/download/v0.1.45/toad_v0.1.45_Windows_ARM64.zip",
+            "url": "https://github.com/cdre-ai/toad/releases/download/v0.1.46/toad_v0.1.46_Windows_ARM64.zip",
             "bin": [
                 "toad.exe"
             ],
-            "hash": "267907ebda838522f68ad11c8f0da1f34c1e36d03d8e9b0a12356c8a0b19c534"
+            "hash": "9fdb94c4507c298b06168dc2601befb0e42da34d0d25dc9a19c7816080c66ade"
         }
     },
     "homepage": "https://github.com/cdre-ai/toad",
